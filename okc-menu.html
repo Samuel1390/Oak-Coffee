@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--metaetiquetas más importantes-->
+    <meta charset="UTF-8">
+    <meta name="author" content="Samuel Nelo">
+    <meta name="keywords" content="oak coffee, tienda de café, tienda de café en Caracas Venezuela, panaderia en Venezuela, panadería en Caracas, panadería en Caracas Venezuela, pastelería en Caracas Venezuela, pasteleria en Caracas, cafés fríos en Caracas, tienda de café en Caracas, tienda de café en Caracas Venezuela, tienda de café en Venezuela">
+    <meta name="title" content="Oak coffee">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Oak coffee, somos una tienda de repostería, panadería y pastelería dedicada al comercio de productos artesanales, desayunos tradicionales y más, hacemos delivery a todo el estado, IMPORTANTE: Oak coffee es una tienda ficticia usada solo como proyecto de frontend, programador: Samuel Nelo">
+    <!--metaetiquetas para redes sociales -->
+    <meta property="og:title" content="Oak Coffee | La mejor tienda de Café en Caracas-Venezuela">
+    <meta property="og:description" content="Oak cofee mezcla Cafetería, panadería y repostería, ubicados en en Caracas Venezuela, te ofrecemos delivery a cualquier parte del estado(tienda ficticia página hecha como proyecto de frontend programador: Samuel Nelo)">
+    <meta property="og:image" content="okc-imgs/okc-logo.jpg">
+    <meta property="og:url" content="https://samuel1390.github.io/oak-coffee/">
+    <meta property="og:type" content="website">
+    <!--metaetiquetas para twitter-->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://samuel1390.github.io/oak-coffee/" />
+    <meta property="twitter:title" content="Oak coffee" />
+    <meta property="twitter:image" content="okc-imgs/okc-logo.jpg" />
+    <meta property="twitter:description" content="Oak cofee mezcla Cafetería, panadería y repostería, ubicados en en Caracas Venezuela, te ofrecemos delivery a cualquier parte del estado(tienda ficticia página hecha como proyecto de frontend programador: Samuel Nelo)" />
+    <!--iconos y fuentes de google fonts usadas en el proyecto-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="okc-menu.css">
+    <link rel="stylesheet" href="favorites-styles.css">
+    <!--METADATOS DE ACCESIBILIDAD-->
+    <meta name="color-scheme" content="light dark">
+    <meta name="supported-color-schemes" content="light dark">
+    <link rel="preload" href="styles.css" as="style">
+    <title>Oak Coffee | Menú</title>
+</head>
+<body>
+    <aside class="aside-menu" id="aside-menu">
+        <div class="aside-menu-container">
+            <button aria-label="abrir menu lateral" class="aside-menu-button" id="aside-menu-button"><span class="material-symbols-outlined">menu</span></button>
+            <div class="aside-logo-container">
+                <div class="aside-logo-bg">
+                    <img src="okc-imgs/okc-logo.png" class="aside-logo-img" alt="logo de oak-coffee">
+                </div>
+                <h2 aria-label="nombre de la cafeteria">Oak Coffee</h2>
+            </div>
+            <h2 class="aside-secction-h2" id="aside-secction-h2-menu-tittle">Navegar</h2>
+            <nav class="aside-nav menu-nav" id="aside-nav-menu" aria-label="menu de navegacion lateral">
+                <ul aria-label="listado de enlaces">
+                    <li><a href="./index.html" class="aside-nav-item">Inicio<span class="material-symbols-outlined">home</span></a></li>
+                    <li><a href="./okc-menu.html?section=6" class="aside-nav-item">Favoritos<span class="material-symbols-outlined">favorite</span></a></li>
+                    <li><a href="./okc-about.html" class="aside-nav-item">Nosotros<span class="material-symbols-outlined">group</span></a></li>
+                </ul>
+            </nav>
+            <a href="./okc-menu.html"><h2 class="aside-secction-h2">Menú</h2></a>
+            <nav aria-label="menu de navegacion para secciones de productos" class="aside-nav products-nav" id="aside-nav-container">
+                <button sectionId="1" id="hotCoffes-button" class="aside-nav-item">Cafés calientes<span class="material-symbols-outlined">chevron_right</span></button>
+                <button sectionId="2" id="coldCoffes-button" class="aside-nav-item">Cafés fríos<span class="material-symbols-outlined">chevron_right</span></button>
+                <button sectionId="3" id="teas-button" class="aside-nav-item">tés<span class="material-symbols-outlined">chevron_right</span></button>
+                <button sectionId="4" id="desserts-button" class="aside-nav-item">Postres<span class="material-symbols-outlined">chevron_right</span></button>
+                <button sectionId="5" id="breads-button" class="aside-nav-item">Panes<span class="material-symbols-outlined">chevron_right</span></button>
+                <button sectionId="6" id="iceCreams-button" class="aside-nav-item">Favoritos<span class="material-symbols-outlined">chevron_right</span></button>
+            </nav>
+        </div>
+    </aside>
+    <header class="header" role="banner">
+        <div class="header-container">
+            <div class="logo-container">
+                <div class="logo-bg">
+                    <img src="okc-imgs/okc-logo.png" class="logo-img" alt="logo de oak coffee">
+                </div>
+                <h2 class="h2">Oak Coffee</h2>
+            </div>
+            
+            <label for="checkbox-menu" id="checkbox-menu-label"><span class="material-symbols-outlined">menu</span></label>
+            <nav aria-label="menú de navegación del encabezado" class="header-nav">
+                <ul aria-label="lista de enlaces y botones" style="
+                display: flex;
+                list-style: none;
+                gap: 20px;
+                ">
+                <li><a tabindex="1" href="./index.html" class="header-nav-item">
+                        <span class="material-symbols-outlined">home</span>Inicio
+                </a></li>
+                <li><button tabindex="1" class="header-nav-item" id="products-button">
+                    <span class="material-symbols-outlined">local_cafe</span>Menú
+                </button></li>
+                <li><a tabindex="1" href="./okc-menu.html?section=6" class="header-nav-item">
+                    <span class="material-symbols-outlined">favorite</span>Favoritos
+                </a></li>
+                <li><a tabindex="1" href="./okc-about.html" class="header-nav-item">
+                    <span class="material-symbols-outlined">group</span>Nosotros
+                </a></li>
+            </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main id="main" class="main">
+        <!--productos añadidos con js-->
+    </main>
+    <!--carta de producto-->
+    <div class="shadow-div" id="okc-menu-card">
+        <div id="shadow-div-child">
+            <form class="card-form" action="">
+                <div class="card-section">
+                    <div class="card-img-container">
+                        <img src="" alt="">
+                    </div>
+                    <h2 class="card-name">Nombre</h2>
+                </div>
+                <div class="card-section">
+                    <fieldset class="card-fieldset">
+                        <legend tabindex="0" class="card-legend">Preferencias</legend>
+                        <label for="sugar-select">Cantidad de azúcar</label>
+                        <select name="sugar-select" class="select" id="sugar-select">
+                            <option class="select-option" value="traditional">Tradicional</option>
+                            <option class="select-option" value="no-sugar">Sin azùcar</option>
+                            <option class="select-option" value="extra-sugar">Incluir sobre de azucar extra</option>
+                        </select>
+                        <label for="milk-select">Cantidad de leche</label>
+                        <select name="milk-select" class="select" id="milk-select">
+                            <option class="select-option" value="traditional">Tradicional</option>
+                            <option class="select-option" value="no-milk">Sin leche</option>
+                            <option class="select-option" value="extra-milk">leche extra</option>
+                        </select>
+                        <span class="span-notification"></span>
+                    </fieldset>
+                    <div class="card-main-buttons">
+                        <label for="items-amount">cantidad:  <input id="items-amount" value="1"  type="number"></label>
+                        <p>Precio: <span class="price-indicator">5$</span></p>
+                    </div>
+                    <button type="button" class="make-delivery-button">Hacer pedido</button>
+                </div>
+            </form>
+            <label id="card-closer" for=""><span class="material-symbols-outlined">close</span></label>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="module" src="okc-menu.js"></script>
+</body>
+</html>

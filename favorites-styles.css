@@ -1,0 +1,177 @@
+
+/* ============================================= */
+/* ESTILOS PARA LA FUNCIONALIDAD DE FAVORITOS   */
+/* ============================================= */
+
+/* Botón de favoritos en productos */
+.product-fav-btn,
+.item-fav-btn {
+    font-size: 2rem;
+    color: #fff;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    padding: 25px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    backdrop-filter: blur(5px);
+}
+
+.product-fav-btn:hover,
+.item-fav-btn:hover {
+    background: rgba(0, 0, 0, 0.7);
+    transform: scale(1.1);
+}
+
+.product-fav-btn:active,
+.item-fav-btn:active {
+    transform: scale(0.95);
+}
+
+/* Estado activo (favorito) */
+.product-fav-btn.favorite-active,
+.item-fav-btn.favorite-active {
+    color: #ff4081 !important;
+    background: rgba(255, 64, 129, 0.2);
+}
+
+/* Contador de favoritos en navegación */
+.fav-counter {
+    background: #ff4081;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+    margin-left: 5px;
+    font-weight: bold;
+    animation: popIn 0.3s ease;
+}
+
+@keyframes popIn {
+    0% {
+        transform: scale(0);
+    }
+    70% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Sección de favoritos vacía */
+.empty-favorites-message {
+    text-align: center;
+    padding: 60px 20px;
+    color: #666;
+    font-family: 'Lato', sans-serif;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    margin: 40px auto;
+    max-width: 500px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.empty-favorites-message .material-symbols-outlined {
+    font-size: 60px;
+    margin-bottom: 20px;
+    color: #ccc;
+    display: block;
+}
+
+.empty-favorites-message h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.empty-favorites-message p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666;
+}
+
+/* Modo oscuro para mensaje vacío */
+.dark .empty-favorites-message {
+    background: rgba(255, 255, 255, 0.05);
+    color: #ccc;
+}
+
+.dark .empty-favorites-message h3 {
+    color: #fff;
+}
+
+.dark .empty-favorites-message p {
+    color: #aaa;
+}
+
+
+.favorite-notification.removed {
+    background: #f44336;
+}
+
+.favorite-notification .material-symbols-outlined {
+    font-size: 20px;
+}
+
+/* Animaciones */
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideOut {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+/* Botón para limpiar favoritos (opcional) */
+.clear-favorites-btn {
+    background: #f44336;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Rubik', sans-serif;
+    margin-top: 20px;
+    transition: background 0.3s;
+}
+
+.clear-favorites-btn:hover {
+    background: #d32f2f;
+}
+
+/* Responsive para notificaciones */
+@media (max-width: 768px) {
+    .favorite-notification {
+        top: 10px;
+        right: 10px;
+        left: 10px;
+        flex-direction: column;
+        text-align: center;
+        padding: 12px;
+    }
+    
+    .empty-favorites-message {
+        margin: 20px;
+        padding: 40px 20px;
+    }
+}

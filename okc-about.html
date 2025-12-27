@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!--metaetiquetas más importantes-->
+    <meta charset="UTF-8">
+    <meta name="author" content="Samuel Nelo">
+    <meta name="keywords" content="oak coffee, tienda de café, tienda de café en Caracas Venezuela, panaderia en Venezuela, panadería en Caracas, panadería en Caracas Venezuela, pastelería en Caracas Venezuela, pasteleria en Caracas, cafés fríos en Caracas, tienda de café en Caracas, tienda de café en Caracas Venezuela, tienda de café en Venezuela">
+    <meta name="title" content="Oak coffee">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Oak coffee, somos una tienda de repostería, panadería y pastelería dedicada al comercio de productos artesanales, desayunos tradicionales y más, hacemos delivery a todo el estado, IMPORTANTE: Oak coffee es una tienda ficticia usada solo como proyecto de frontend, programador: Samuel Nelo">
+    <!--metaetiquetas para redes sociales -->
+    <meta property="og:title" content="Oak Coffee | La mejor tienda de Café en Caracas-Venezuela">
+    <meta property="og:description" content="Oak cofee mezcla Cafetería, panadería y repostería, ubicados en en Caracas Venezuela, te ofrecemos delivery a cualquier parte del estado(tienda ficticia página hecha como proyecto de frontend programador: Samuel Nelo)">
+    <meta property="og:image" content="okc-imgs/okc-logo.jpg">
+    <meta property="og:url" content="https://samuel1390.github.io/oak-coffee/">
+    <meta property="og:type" content="website">
+    <!--metaetiquetas para twitter-->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://samuel1390.github.io/oak-coffee/" />
+    <meta property="twitter:title" content="Oak coffee" />
+    <meta property="twitter:image" content="okc-imgs/okc-logo.jpg" />
+    <meta property="twitter:description" content="Oak cofee mezcla Cafetería, panadería y repostería, ubicados en en Caracas Venezuela, te ofrecemos delivery a cualquier parte del estado(tienda ficticia página hecha como proyecto de frontend programador: Samuel Nelo)" />
+    <!--iconos y fuentes de google fonts usadas en el proyecto-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <!--METADATOS DE ACCESIBILIDAD-->
+    <meta name="color-scheme" content="light dark">
+    <meta name="supported-color-schemes" content="light dark">
+    <link rel="preload" href="styles.css" as="style">
+    <!-- ICONO Y TITULO -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./okc-imgs/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./okc-imgs/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <title>Acerca de Nosotros - Oak Coffee Caracas</title>
+    <!-- ESTILOS -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="favorites-styles.css">
+    <link rel="stylesheet" href="okc-about.css">
+</head>
+<body>
+    <!-- ACCESIBILIDAD -->
+    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+    <!-- ASIDE -->
+    <aside class="aside-menu" id="aside-menu" aria-label="Menú de navegación de productos"
+            role="complementary">
+        <div class="aside-menu-container">
+            <button aria-label="abrir menu lateral" class="aside-menu-button" id="aside-menu-button"><span class="material-symbols-outlined">menu</span></button>
+            <div class="aside-logo-container">
+                <div class="aside-logo-bg">
+                    <img src="okc-imgs/okc-logo.png" class="aside-logo-img" alt="logo de oak-coffee">
+                </div>
+                <h2 aria-label="nombre de la cafeteria">Oak Coffee</h2>
+            </div>
+            <h2 class="aside-secction-h2" id="aside-secction-h2-menu-tittle">Navegar</h2>
+            <nav class="aside-nav menu-nav" id="aside-nav-menu" aria-label="menu de navegacion lateral">
+                <ul aria-label="listado de enlaces">
+                    <li><a href="./index.html" class="aside-nav-item">Inicio<span class="material-symbols-outlined">home</span></a></li>
+                    <li><a href="./okc-menu.html?section=6" class="aside-nav-item">Favoritos<span class="material-symbols-outlined">favorite</span></a></li>
+                    <li><a href="./okc-about.html" class="aside-nav-item">Nosotros<span class="material-symbols-outlined">group</span></a></li>
+                </ul>
+            </nav>
+            <a href="./okc-menu.html"><h2 class="aside-secction-h2">Menú</h2></a>
+            <nav aria-label="menu de navegacion para secciones de productos" class="aside-nav products-nav" id="aside-nav-container">
+                <ul aria-label="enlaces a distintas secciones">
+                    <li><a href="./okc-menu.html?section=1" class="aside-nav-item">Cafés calientes<span class="material-symbols-outlined">chevron_right</span></a></li>
+                    <li><a href="./okc-menu.html?section=2" class="aside-nav-item">Cafés fríos<span class="material-symbols-outlined">chevron_right</span></a></li>
+                    <li><a href="./okc-menu.html?section=3" class="aside-nav-item">tés<span class="material-symbols-outlined">chevron_right</span></a></li>
+                    <li><a href="./okc-menu.html?section=4" class="aside-nav-item">Postres<span class="material-symbols-outlined">chevron_right</span></a></li>
+                    <li><a href="./okc-menu.html?section=5" class="aside-nav-item">Panes<span class="material-symbols-outlined">chevron_right</span></a></li>
+                    <li><a href="./okc-menu.html?section=6" class="aside-nav-item">Favoritos<span class="material-symbols-outlined">chevron_right</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </aside>
+    <header class="header" role="banner" aria-label="Encabezado principal">
+        <div class="header-container">
+            <div class="logo-container">
+                <div class="logo-bg">
+                    <img src="okc-imgs/okc-logo.png" class="logo-img" alt="logo de oak coffee">
+                </div>
+                <h2 class="h2">Oak Coffee</h2>
+            </div>
+            
+            <label for="checkbox-menu" id="checkbox-menu-label"><span class="material-symbols-outlined">menu</span></label>
+            <nav aria-label="menú de navegación del encabezado" class="header-nav">
+                <ul aria-label="lista de enlaces y botones" style="
+                display: flex;
+                list-style: none;
+                gap: 20px;
+                ">
+                <li><a tabindex="1" href="./index.html" class="header-nav-item">
+                        <span class="material-symbols-outlined">home</span>Inicio
+                </a></li>
+                <li><button tabindex="1" class="header-nav-item" id="products-button">
+                    <span class="material-symbols-outlined">local_cafe</span>Menú
+                </button></li>
+                <li><a tabindex="1" href="./okc-menu.html?section=6" class="header-nav-item">
+                    <span class="material-symbols-outlined">favorite</span>Favoritos
+                </a></li>
+                <li><a tabindex="1" href="./okc-about.html" class="header-nav-item">
+                    <span class="material-symbols-outlined">group</span>Nosotros
+                </a></li>
+            </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- HERO SECTION -->
+    <section class="hero"aria-label="Historia de Oak Coffee">
+        <div class="hero-container">
+            <h1 class="hero-title">Nuestra Historia</h1>
+            <div class="hero-divider" aria-hidden="true"></div>
+            <p class="hero-subtitle">Más de una década endulzando Caracas con pasión, tradición y los mejores sabores. Conoce la historia detrás de cada taza de café, cada pastel y cada sonrisa que servimos.</p>
+        </div>
+    </section>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-container" id="main-content">
+        <!-- Nuestra Historia -->
+        <section class="section">
+            <h2 class="section-title">Orígenes y Tradición</h2>
+            <p class="text-content">En el corazón de Caracas, en el año 2013, nació Oak Coffee con un sueño simple pero poderoso: crear un espacio donde la calidad, el sabor y la calidez humana se encontraran en cada rincón. Lo que comenzó como una pequeña cafetería en una esquina del centro de la ciudad, hoy se ha convertido en un referente gastronómico que combina lo mejor de la pastelería europea con el auténtico sabor venezolano.</p>
+            
+            <div class="highlight">
+                <p class="highlight-text">"Nuestra misión va más allá de servir café. Buscamos crear momentos memorables, donde cada cliente se sienta como en casa, disfrutando de productos elaborados con dedicación artesanal y los ingredientes más frescos de la región."</p>
+            </div>
+            
+            <p class="text-content">A lo largo de más de 10 años, hemos crecido y evolucionado, pero nuestro compromiso con la calidad y la autenticidad permanece intacto. Cada mañana, nuestro equipo llega antes del amanecer para hornear el pan fresco, preparar las masas para los pasteles y moler los granos de café que han sido seleccionados cuidadosamente de las mejores fincas del país.</p>
+        </section>
+
+        <!-- Nuestra Filosofía -->
+        <section class="section">
+            <h2 class="section-title">Nuestra Filosofía</h2>
+            <p class="text-content">En Oak Coffee creemos que la excelencia está en los detalles. Por eso, cada producto que sale de nuestras cocinas pasa por un riguroso proceso que combina técnicas tradicionales con un toque de innovación.</p>
+            
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon">
+                        <span class="material-symbols-outlined">star</span>
+                    </div>
+                    <h3 class="value-title">Calidad Premium</h3>
+                    <p class="text-content">Utilizamos solo ingredientes de la más alta calidad, desde granos de café de origen único hasta harinas orgánicas y frutas frescas de temporada.</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">
+                        <span class="material-symbols-outlined">handshake</span>
+                    </div>
+                    <h3 class="value-title">Tradición Artesanal</h3>
+                    <p class="text-content">Mantenemos vivas las técnicas de panadería y pastelería tradicional, combinándolas con la creatividad de nuestros chefs para ofrecer productos únicos.</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">
+                        <span class="material-symbols-outlined">diversity_3</span>
+                    </div>
+                    <h3 class="value-title">Comunidad</h3>
+                    <p class="text-content">Somos parte del tejido social de Caracas. Colaboramos con productores locales y participamos activamente en iniciativas comunitarias.</p>
+                </div>
+            </div>
+        </section>
+        <!-- Nuestro Equipo -->
+        <section class="section">
+            <h2 class="section-title">El Corazón de Oak Coffee</h2>
+            <p class="text-content">Detrás de cada producto excepcional hay un equipo apasionado. Nuestros chefs, baristas y personal están comprometidos con ofrecer la mejor experiencia a cada cliente.</p>
+            
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-img">
+                        <span class="material-symbols-outlined">person</span>
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-name">María González</h3>
+                        <p class="team-role">Pastelera Ejecutiva</p>
+                        <p class="text-content">Con más de 15 años de experiencia en pastelería francesa, María es la maga detrás de nuestros postres más elaborados.</p>
+                    </div>
+                </div>
+                
+                <div class="team-card">
+                    <div class="team-img">
+                        <span class="material-symbols-outlined">person</span>
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-name">Carlos Rodríguez</h3>
+                        <p class="team-role">Maestro Tostador</p>
+                        <p class="text-content">Carlos domina el arte de tostar granos de café. Su conocimiento garantiza que cada taza tenga el perfil de sabor perfecto.</p>
+                    </div>
+                </div>
+                
+                <div class="team-card">
+                    <div class="team-img">
+                        <span class="material-symbols-outlined">person</span>
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-name">Ana Contreras</h3>
+                        <p class="team-role">Gerente General</p>
+                        <p class="text-content">Ana es la mente organizativa detrás de Oak Coffee. Se asegura de que cada aspecto de nuestro negocio funcione a la perfección.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ubicación -->
+        <section class="section">
+            <h2 class="section-title">Nuestro Hogar en Caracas </h2>
+            <div class="note">
+                <span>IMPORTANTE: Oak Coffee es una tienda ficticia la página es solo usada como proyecto de frontend, desarrollador: 
+                    <a href="https://github.com/Samuel1390">Samuel Nelo</a>
+                </span>
+            </div>
+            <p class="text-content">Ubicados en el corazón de la ciudad, nuestros locales son más que simples cafeterías: son espacios de encuentro donde la comunidad se reúne para compartir momentos especiales.</p>
+            
+            <div class="location-container">
+                <div class="location-info">
+                    <h3 class="section-subtitle">Visítanos</h3>
+                    
+                    <div class="info-item">
+                        <span class="material-symbols-outlined info-icon">location_on</span>
+                        <div>
+                            <p class="text-content" style="font-weight: 600;">Local Principal</p>
+                            <p class="text-content">Av. Principal de Los Palos Grandes, Caracas 1061, Distrito Capital</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <span class="material-symbols-outlined info-icon">schedule</span>
+                        <div>
+                            <p class="text-content" style="font-weight: 600;">Horarios</p>
+                            <p class="text-content">Lunes a Viernes: 7:00 am - 9:00 pm<br>
+                            Sábados y Domingos: 8:00 am - 10:00 pm</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <span class="material-symbols-outlined info-icon">call</span>
+                        <div>
+                            <p class="text-content" style="font-weight: 600;">Contáctanos</p>
+                            <p class="text-content">Teléfono: (0212) 555-1234<br>
+                            WhatsApp: +58 412-555-1234<br>
+                            Email: info@oakcoffeecaracas.com</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="location-map">
+                    <div style="text-align: center; padding: 20px;">
+                        <span class="material-symbols-outlined" style="font-size: 48px; margin-bottom: 10px;">map</span>
+                        <p>Ubicación en Caracas</p>
+                        <p style="font-size: 1rem; margin-top: 10px;">Av. Principal de Los Palos Grandes</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer role="contentinfo" class="footer">
+        <div class="footer-container">
+            <div>
+                <div style="color: #fcd596; margin: 20px 0;" class="logo-container">
+                    <div class="logo-bg">
+                        <img src="okc-imgs/okc-logo.png" class="logo-img" alt="logo de oak coffee">
+                    </div>
+                    <h2 class="h2">Oak Coffee</h2>
+                </div>
+                <p class="footer-text">Más de 10 años sirviendo los mejores sabores de Caracas. Pasión, tradición y calidad en cada producto.</p>
+            </div>
+            
+            <div>
+                <h3 class="footer-title">Nuestros Productos</h3>
+                <ul class="footer-links" id="aside-nav-container">
+                    <li><a href="./okc-menu.html?section=1" class="footer-link">Cafés calientes<span class="material-symbols-outlined">chevron_right</span></a></li>
+                    <li><a href="./okc-menu.html?section=2" class="footer-link">Cafés fríos<span class="material-symbols-outlined">chevron_right</span></a></li>
+                    <li><a href="./okc-menu.html?section=3" class="footer-link">tés<span class="material-symbols-outlined">chevron_right</span></a></li>
+                    <li><a href="./okc-menu.html?section=4" class="footer-link">Postres<span class="material-symbols-outlined">chevron_right</span></a></li>
+                    <li><a href="./okc-menu.html?section=5" class="footer-link">Panes<span class="material-symbols-outlined">chevron_right</span></a></li>
+                    <li><a href="./okc-menu.html?section=6" class="footer-link">Favoritos<span class="material-symbols-outlined">chevron_right</span></a></li>
+                </ul>
+            </div>
+            
+            <nav>
+                <h3 class="footer-title">Enlaces Rápidos</h3>
+                <ul class="footer-links">
+                    <li><a href="./index.html" class="footer-link">Inicio</a></li>
+                    <li><a href="#" class="footer-link">Nosotros</a></li>
+                    <li><a href="./okc-menu.html" class="footer-link">Menú</a></li>
+                </ul>
+            </nav>
+            
+            <div>
+    <h3 class="footer-title">Suscríbete</h3>
+    <p class="footer-text">Recibe noticias, promociones especiales y descubre nuestros nuevos productos antes que nadie.</p>
+    <form aria-label="Formulario de suscripción solo decoración" style="margin-top: 15px;">
+        <label for="email-subscribe" class="sr-only">Correo electrónico</label>
+        <input class="footer-input" 
+            id="email-subscribe" 
+            type="email" 
+            placeholder="Tu correo electrónico" 
+            aria-required="true"
+            required
+            >
+        <button class="footer-button" type="submit">
+            Suscribirse
+        </button>
+    </form>
+</div>
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; 2013 - 2024 Oak Coffee Caracas. Todos los derechos reservados.</p>
+            <p style="margin-top: 10px;">Desarrollado con <span style="color: var(--color-1);">♥</span> por Samuel Nelo</p>
+        </div>
+    </footer>
+
+    <script type="module" src="ock-about.js"></script>
+</body>
+</html>
