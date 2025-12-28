@@ -1,6 +1,7 @@
 /* ESTILOS ESPECIFICOS DEL MENU*/
 body {
     justify-content: end;
+    background-color: #fff;
 }
 /*  ASIDE DE PRODUCTOS  */
 
@@ -146,4 +147,5 @@ body {
     height: 100%;
     object-fit: cover;
 }
+
 
