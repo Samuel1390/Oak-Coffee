@@ -1,7 +1,8 @@
 /* ESTILOS PARA LA SECCION DE NOSOTROS */
 body {
     flex-direction: column;
-    background-color: #fff
+    background-color: #fff;
+    color: #000
 }
 
 
@@ -353,3 +354,4 @@ body {
     
 
 }
+
