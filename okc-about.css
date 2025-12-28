@@ -1,6 +1,7 @@
 /* ESTILOS PARA LA SECCION DE NOSOTROS */
 body {
     flex-direction: column;
+    background-color: #fff
 }
 
 
@@ -350,4 +351,5 @@ body {
         grid-template-columns: 1fr;
     }
     
+
 }
