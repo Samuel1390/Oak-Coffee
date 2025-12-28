@@ -2,6 +2,7 @@
 body {
     justify-content: end;
     background-color: #fff;
+    color: #000;
 }
 /*  ASIDE DE PRODUCTOS  */
 
@@ -147,5 +148,6 @@ body {
     height: 100%;
     object-fit: cover;
 }
+
 
 
